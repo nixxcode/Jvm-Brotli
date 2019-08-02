@@ -23,8 +23,11 @@ Since jBrotli is now several years out of date, I decided to start my own soluti
 
 * Windows (32 and 64 bit) - Tested on Windows 7 and 10
 * Linux (64 bit) - Tested on Ubuntu 18.04
-* Linux on ARM processors (64 bit) - UNTESTED
 * Mac OSX - Tested on Mojave
+
+#### Support Coming Soon
+
+* Linux on ARM processors (64 bit) - The build files are ready, just haven't had the opportunity to do the actual build
 
 ## Getting Started
 
