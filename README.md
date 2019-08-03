@@ -108,7 +108,7 @@ Coming soon
 
 Coming soon
 
-## License
+## Licensing
 
 Google Brotli and corresponding Java code are licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
