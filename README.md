@@ -1,16 +1,17 @@
 # Jvm-Brotli: Lightweight, cross-platform Java library for the Brotli compression format
 
-Jvm-Brotli's goal is to increase the availability of the Brotli compression algorithm for Java-based frameworks. It aims to:
+Making Brotli usable in Java can be a very tricky and time consuming exercise. The Brotli code is written in c/c++ and is platform dependent. This makes the use of JNI bindings mandatory. 
 
-- Take the original c/c++ and Java code from [google/brotli](https://github.com/google/brotli), and keep it as close as possible to the original. (only make minor performance tweaks where needed)
+The bindings are provided by Google, but it is still left to the Java developer to compile the Brotli and JNI source files individually for every platform they wish to support. Anybody who has dealt with JNI bindings and native code in the past, will already be familiar with the problems and complexity this approach can add to a Java project.
+
+**This is where Jvm-Brotli comes in**. The goal of this project is to provide easy access to the Brotli compression algorithm for Java developers on all platforms. 
+
+Jvm-Brotli aims to:
+
+- Take the original c/c++ and Java code from [google/brotli](https://github.com/google/brotli), keeping it as close as possible to the original.
 - Compile it on multiple platforms
-- Package the pre-compiled native libraries into JARs and make them available via maven central
+- Package the pre-compiled native libraries into JARs, making them available via maven central
 - Provide source code with project breakdown and build instructions, to make forking and building as easy as possible for platforms that are not yet supported.
-
-#### Motivation
-When searching through the existing set of Brotli solutions for Java, I found [meteogroup/jbrotli](https://github.com/MeteoGroup/jbrotli) and thought it was a fantastic approach towards improving Brotli availability for Java developers everywhere.
-
-Since jBrotli is now several years out of date, I decided to start my own solution based on the same objective: Making Brotli accessible to Java developers on as many platforms as possible
 
 ## General Information
 
@@ -38,17 +39,22 @@ Jvm-Brotli is designed with ease of use in mind. To include it in your Maven pro
     <groupId>com.nixxcode.jvmbrotli</groupId>
     <artifactId>jvmbrotli</artifactId>
     <version>0.1.0</version>
+    <optional>true</optional>
 </dependency>
 ```
-That's all! You don't need to worry about what platform you're on, as long as it's supported. The correct native library will be downloaded automatically as an additional Maven dependency.
+That's all! You don't need to worry about what platform you're on, as long as it's supported. The correct native library will be downloaded automatically as an additional Maven dependency. 
+
+**The same applies for transitive dependencies as well!** You don't need to worry about others getting the wrong native library when they include your project.
+
+The **optional** tag is not mandatory, but is highly recommended. It gives your dependents the option to keep their code 100% platform-independent by opting to exclude Jvm-Brotli
 
 If your platform is not supported, but you still want to use Jvm-Brotli right now, please scroll down to the "Build Instructions" section. 
 
-We would also really appreciate it if you could create an issue and request support for your platform. Remember, the goal of this project is to make Java Brotli available on as many platforms as possible. We can make it happen with your help!
+We would also really appreciate it if you could create an issue and request support for your platform. Remember, the goal of this project is to make Jvm-Brotli available on as many platforms as possible. We can make it happen with your help!
 
 ### Usage Examples
 
-Fully functional example code  can be found [here](https://github.com/nixxcode/jvm-brotli/tree/release-prep/jvmbrotli/src/test/java/com/nixxcode/jvmbrotli/examples)
+Please see the quick snippets below to get started. In addition, fully functional example code  can be found [here](https://github.com/nixxcode/jvm-brotli/tree/release-prep/jvmbrotli/src/test/java/com/nixxcode/jvmbrotli/examples)
 
 #### Encoding a stream:
 ```
