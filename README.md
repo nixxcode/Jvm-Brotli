@@ -34,7 +34,7 @@ Jvm-Brotli aims to:
 
 Jvm-Brotli is designed with ease of use in mind. To include it in your Maven project, simply add the following dependency to your pom.xml
 
-```
+```xml
 <dependency>
     <groupId>com.nixxcode.jvmbrotli</groupId>
     <artifactId>jvmbrotli</artifactId>
@@ -57,7 +57,7 @@ We would also really appreciate it if you could create an issue and request supp
 Please see the quick snippets below to get started. In addition, fully functional example code  can be found [here](https://github.com/nixxcode/jvm-brotli/tree/release-prep/jvmbrotli/src/test/java/com/nixxcode/jvmbrotli/examples)
 
 #### Encoding a stream:
-```
+```java
 // Init file input and output
 FileInputStream inFile = new FileInputStream(filePath);
 FileOutputStream outFile = new FileOutputStream(filePath + ".br");
@@ -81,7 +81,7 @@ inFile.close();
 ```
 
 #### Decoding a stream:
-```
+```java
 // Init file input and output
 FileInputStream inFile = new FileInputStream(filePath);
 FileOutputStream outFile = new FileOutputStream(decodedfilePath);
