@@ -4,7 +4,7 @@ We want to start off by saying thank you for using Jvm-Brotli. This project is a
  
 Whether it's reporting/fixing bugs, making performance improvements, helping with documentation, or even implementing a whole new feature, every contribution is meaningful and adds to the overall quality of the project. Thank you very much for your interest in participating!
  
-Unlike many other projects on Github, we don't expect you to read a huge wall of text or adhere to any strict set of rules when making a contribution. Our only requirement is that you follow our [code of conduct](https://github.com/nixxcode/jvm-brotli/blob/master/CODE_OF_CONDUCT.md), which exists to keep the Jvm-Brotli community a kind and welcoming place for everybody who wishes to participate.
+We don't expect you to read a huge wall of text or adhere to any strict set of rules when making a contribution. Our only requirement is that you follow our [code of conduct](https://github.com/nixxcode/jvm-brotli/blob/master/CODE_OF_CONDUCT.md), which exists to keep the Jvm-Brotli community a kind and welcoming place for everybody who wishes to participate.
 
 **There is no experience requirement!** Even if you are completely new to open source and have never made a contribution before, please don't let that discourage you! Every single one of us has been there. We all have to start somewhere, and it might as well be with us. :smile:
 
