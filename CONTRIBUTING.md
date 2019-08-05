@@ -6,7 +6,7 @@ Whether it's reporting/fixing bugs, making performance improvements, helping wit
  
 We don't expect you to read a huge wall of text or adhere to any strict set of rules when making a contribution. Our only requirement is that you follow our [code of conduct](https://github.com/nixxcode/jvm-brotli/blob/master/CODE_OF_CONDUCT.md), which exists to keep the Jvm-Brotli community a kind and welcoming place for everybody who wishes to participate.
 
-**There is no experience requirement!** Even if you are completely new to open source and have never made a contribution before, please don't let that discourage you! Every single one of us has been there. We all have to start somewhere, and it might as well be with us. :smile:
+**There is no experience requirement!** Even if you are completely new to open source and have never made a contribution before, please don't let that discourage you! Every single one of us has been there. You have to start somewhere, and it might as well be with us. :smile:
 
 We will respond to **every** contribution, regardless if we choose to accept it or not. In the event your contribution is not accepted, we will offer an explanation, and where possible, give you the opportunity to make the needed corrections yourself.
 
