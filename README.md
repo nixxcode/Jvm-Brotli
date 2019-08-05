@@ -9,22 +9,24 @@ The bindings are provided by Google, but it is still left to the Java developer 
 Jvm-Brotli aims to:
 
 - Take the original c/c++ and Java code from [google/brotli](https://github.com/google/brotli), keeping it as close as possible to the original.
-- Compile it on multiple platforms
-- Package the pre-compiled native libraries into JARs, making them available via maven central
-- Provide source code with project breakdown and build instructions, to make forking and building as easy as possible for platforms that are not yet supported.
+- Compile it on multiple platforms.
+- Package the pre-compiled native libraries into JARs and upload them to maven central
+- Automatically download the correct native library from maven central based on the user's current platform.
+- Provide source code with project breakdown and build instructions, to make forking and building as easy as possible.
 
 ## General Information
 
 * Project website: (coming soon)
 * Documentation: (coming soon)
 * Chat: (coming soon)
-* Licensing: (coming soon)
 
 ## Supported Platforms
 
 * Windows (32 and 64 bit) - Tested on Windows 7 and 10
 * Linux (64 bit) - Tested on Ubuntu 18.04
 * Mac OSX - Tested on Mojave
+
+**Please be aware** that "platform" in this context means JVM version, and not your operating system! (e.g. Windows 64-bit running a 32-bit version of JVM will identify as 32-bit!)
 
 #### Support Coming Soon
 
@@ -46,11 +48,9 @@ That's all! You don't need to worry about what platform you're on, as long as it
 
 **The same applies for transitive dependencies as well!** You don't need to worry about others getting the wrong native library when they include your project.
 
-The **optional** tag is not mandatory, but is highly recommended. It gives your dependents the option to keep their code 100% platform-independent by opting to exclude Jvm-Brotli
+The **optional** tag is not a must, but is highly recommended given the JNI-dependent nature of Jvm-Brotli. It means your dependents will also need to add Jvm-Brotli as a maven or gradle dependency if they wish to include it in their project. This way, you are not forcing JNI code on your dependents.
 
-If your platform is not supported, but you still want to use Jvm-Brotli right now, please scroll down to the "Build Instructions" section. 
-
-We would also really appreciate it if you could create an issue and request support for your platform. Remember, the goal of this project is to make Jvm-Brotli available on as many platforms as possible. We can make it happen with your help!
+Finally, if your platform is not supported, We would really appreciate if you could create an issue and request for support to be added. The goal of this project is to make Brotli readily available to Java developers on as many platforms as possible. We can make it happen with your help!
 
 ### Usage Examples
 
