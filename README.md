@@ -8,7 +8,7 @@ The bindings are provided by Google, but it is still left to the Java developer 
 
 Jvm-Brotli aims to:
 
-- Take the up-to-date c/c++ and Java code from [google/brotli](https://github.com/google/brotli), keeping it as close as possible to the original.
+- Take the up-to-date c/c++ and Java code from [google/brotli](https://github.com/google/brotli).
 - Compile it on multiple platforms.
 - Package the pre-compiled native libraries into JARs and upload them to maven central
 - Automatically download the correct native library from maven central based on the user's current platform.
