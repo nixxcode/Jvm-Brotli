@@ -4,7 +4,7 @@ Making Brotli usable in Java can be a tricky and time consuming exercise. The Br
 
 The bindings are provided by Google, but it is still left to the Java developer to compile the Brotli and JNI source files individually for every platform they wish to support. Anybody who has dealt with JNI bindings and native code in the past, will already be familiar with the problems and complexity this approach can add to a Java project.
 
-**This is where Jvm-Brotli comes in**. The goal of this project is to provide easy access to the Brotli compression algorithm for Java developers on all platforms. 
+**This is where Jvm-Brotli comes in**. The goal for this project is to provide easy access to the Brotli compression algorithm for Java developers and users on all platforms. 
 
 Jvm-Brotli aims to:
 
@@ -32,6 +32,12 @@ Jvm-Brotli aims to:
 
 * Linux on ARM processors (64 bit) - The build files are ready, just haven't had the opportunity to do the actual build
 
+#### Other Platforms
+
+If you are uncertain about your platform being supported, we encourage you to clone the example project and try running it. This will give you a definitive answer.
+
+If your platform is not supported, we would really appreciate if you could create an issue and request for support to be added. The goal for this project is to make Brotli readily available to Java developers and users on as many platforms as possible. We can make it happen with your help!
+
 ## Getting Started
 
 Jvm-Brotli is designed with ease of use in mind. To include it in your Maven project, simply add the following dependency to your pom.xml
@@ -49,8 +55,6 @@ That's all! You don't need to worry about what platform you're on, as long as it
 **The same applies for transitive dependencies as well!** You don't need to worry about others getting the wrong native library when they include your project.
 
 The **optional** tag is not a must, but is highly recommended given the JNI-dependent nature of Jvm-Brotli. It means your dependents will also need to add Jvm-Brotli as a maven or gradle dependency if they wish to include it in their project. This way, you are not forcing JNI code on your dependents.
-
-Finally, if your platform is not supported, We would really appreciate if you could create an issue and request for support to be added. The goal of this project is to make Brotli readily available to Java developers on as many platforms as possible. We can make it happen with your help!
 
 ### Usage Examples
 
