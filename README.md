@@ -62,8 +62,6 @@ Please see the quick snippets below to get started. In addition, fully functiona
 
 #### Loading Jvm-Brotli:
 
-Before calling any other methods in the jvmbrotli namespace, you must execute the following line in your application:
-
 ```java
 BrotliLoader.loadBrotli();
 ```
