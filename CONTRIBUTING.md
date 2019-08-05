@@ -10,7 +10,7 @@ We don't expect you to read a huge wall of text or adhere to any strict set of r
 
 We will respond to **every** contribution, regardless if we choose to accept it or not. In the event your contribution is not accepted, we will offer an explanation, and where possible, give you the opportunity to make the needed corrections yourself.
 
-With all that said, here are a few brief contributing guidelines, just to keep things clear for everybody involved:
+With all that said, here are a few brief guidelines, just to keep things clear for everybody involved:
 
 - If you are reporting a bug, please open an issue, explain the problem and provide the steps to reproduce it.
 
