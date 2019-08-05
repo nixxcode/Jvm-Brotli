@@ -1,4 +1,4 @@
-## Contribution Guidelines
+# Contribution Guidelines
 
 We want to start off by saying thank you for using Jvm-Brotli. This project is a labour of love, and we appreciate all users who spend their precious time making contributions, regardless of experience level.
  
