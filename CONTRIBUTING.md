@@ -22,4 +22,4 @@ With all that said, here are a few brief contributing guidelines, just to keep t
 
 For anything not in the list, please feel free to open an issue and ask! 
 
-If you've gotten this far, we would once again like to thank you for your interest. If you do have a contribution in mind, **please** open an issue and share it with us. :smile:
+If you've gotten this far, we would once again like to thank you for your interest. If you do have a contribution in mind, **please** open an issue and share it with us!
