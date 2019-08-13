@@ -112,13 +112,13 @@ outFile.close();
 ## Project Structure
 Jvm-Brotli is a Maven project that contains multiple modules. This sections aims to break down the structure and explain the purpose of the individual modules. 
 
-##### jvmbrotli-parent (pom located in project root)
+#### jvmbrotli-parent (pom located in project root)
 This is the master or "meta" module for the project. It contains relevant project information, as well as build/publish rules that apply to all submodules.
 
-##### jvmbrotli (pom located in jvmbrotli directory)
+#### jvmbrotli (pom located in jvmbrotli directory)
 This module contains the Java code for the project. It's where the callable jvm-brotli methods live. Most of it is taken directly from the Brotli project on Github, only the native library loader is custom and the tests are modified to make use of said library loader.
 
-##### jvmbrotli-natives (pom located in natives directory)
+#### jvmbrotli-natives (pom located in natives directory)
 This is the "master" module for the individual native submodules. It contains profiles which are activated based on the operating system/architecture combination and activate only the os/arch submodule that corresponds to our platform.
 
 The individual native submodules then contain platform-dependent build scripts, which invoke CMake with the CMakeLists file located in the project's root directroy as part of the maven build process.
